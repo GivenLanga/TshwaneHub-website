@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       piece.style.position = "absolute";
       piece.style.left = `${randomX}px`;
       piece.style.top = `${randomY}px`;
-      piece.style.opacity = 0; // Hide initially for drop animation
+      piece.style.opacity = 0;
     });
   };
 
@@ -76,17 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const mouseY = clientY - rect.top;
 
     pieces.forEach((piece, index) => {
-      const offsetX = (mouseX * (index + 1)) / 100; // Offset factor for X
-      const offsetY = (mouseY * (index + 1)) / 100; // Offset factor for Y
+      const offsetX = (mouseX * (index + 1)) / 100;
+      const offsetY = (mouseY * (index + 1)) / 100;
       piece.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     });
   };
 
-  // Initialize the random positions
   randomizePositions();
 
   // Trigger dropping animation on load
-  setTimeout(dropPieces, 500); // Delay to allow randomization
+  setTimeout(dropPieces, 500);
 
   // Add event listener for mouse movement
   container.addEventListener("mousemove", movePieces);
