@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Hub.css" />
-    <link rel="icon" type="image/x-icon" href="./assests/images.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/images.png" />
     <title>TshwaneHub</title>
   </head>
-
   <body>
     <div class="back-styles">
-      <nav>
+      <nav id="navbar">
         <div class="left-nav">
           <img
             id="nav-pic"
@@ -21,50 +20,62 @@
         <div class="right-nav">
           <span class="nav-item"><a href="./index.html">Home</a></span>
           <span class="nav-item">
-            <a href="./webite-pages/shapers.html" target="_blank"
-              >Shapers</a
-            ></span
-          >
-          <span class="nav-item display"
-            >AboutUs
-
-            <!-- add a drop down arrow -->
+            <a href="./website-pages/shapers.html" target="_blank">Shapers</a>
+          </span>
+          <span class="nav-item display">
+            AboutUs
             <ul class="dropdown">
               <li class="list">Mission</li>
               <li class="list">Projects</li>
               <li class="list">Partners</li>
             </ul>
           </span>
-
-          <span class="nav-item" target="_blank">
-            <a href="./webite-pages/contact.html" target="_blank"
-              >ContactUS</a
-            ></span
-          >
+          <span class="nav-item">
+            <a href="./website-pages/contact.html" target="_blank">ContactUS</a>
+          </span>
         </div>
       </nav>
 
       <main>
-        <div class="logo-back">
-          <img
-            id="back-img"
-            src="./assets/globalShapers3d_1_-removebg-preview-removebg-preview.png"
-            alt=""
-          />
+        <div class="peice-container">
+          <div class="indi-peice">
+            <img id="piece1" src="assets/pieces/New Project.png" alt="Home" />
+            <img
+              id="piece2"
+              src="assets/pieces/New Project(1).png"
+              alt="Shapers"
+            />
+            <img
+              id="piece3"
+              src="assets/pieces/New Project(2).png"
+              alt="AboutUs"
+            />
+            <img
+              id="piece4"
+              src="assets/pieces/New Project(3).png"
+              alt="Mission"
+            />
+            <img
+              id="piece5"
+              src="assets/pieces/New Project(4).png"
+              alt="Projects"
+            />
+            <img
+              id="piece6"
+              src="assets/pieces/New Project(5).png"
+              alt="Partners"
+            />
+            <img
+              id="piece7"
+              src="assets/pieces/New Project(6).png"
+              alt="ContactUS"
+            />
+            <img id="piece8" src="assets/pieces/New Project(7).png" alt="" />
+            <img id="piece9" src="assets/pieces/New Project(8).png" alt="" />
+          </div>
         </div>
-
-        <div class="log-text">
-          <h1 data-text="l-text">TSHWANE</h1>
-        </div>
-
-        <!-- <section id="paragraph">
-          <h1 class="p1">Welcome</h1>
-          <h2 class="p2">To the TswaneHub</h2>
-          <p class="p3">
-            Shaping Change, Inspiring Community, Empowering Tshwane.
-          </p>
-        </section> -->
       </main>
     </div>
+    <script src="./scrip.js"></script>
   </body>
 </html>
