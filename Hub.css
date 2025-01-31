@@ -5,13 +5,19 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
-.back-styles,
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  /* background-color: #1b1c20; */
+  margin: 0;
+}
+.back-styles {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  z-index: 0; /* Ensure it stays behind content */
 }
 
 #nav-pic {
@@ -124,6 +130,12 @@ a {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  /* Add background image properties */
+  background-image: url("./assets/globalShapers3d_1_-removebg-preview-removebg-preview-removebg-preview(1).png");
+  background-size: 40%; /* Adjust based on your preference */
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .peice-container img {
@@ -150,14 +162,6 @@ a {
   height: 120%;
   border-radius: 50%;
   z-index: -1;
-}
-
-.tshwane-log {
-  position: absolute;
-  top: 12rem;
-  left: 30rem;
-  z-index: 9999999;
-  pointer-events: none;
 }
 
 /* Dark Mode Styles */
