@@ -153,15 +153,34 @@ a {
 }
 
 .tshwane-log {
-  position: absolute;
-  top: 7rem;
-  left: 20rem;
+  position: fixed;
+  /* Base positioning */
+  top: 19vh; /* Use viewport height units */
+  left: 29vw; /* Use viewport width units */
+  /* Size control */
+  width: 25vmin; /* 25% of smaller viewport dimension */
+  max-width: 300px; /* Prevent oversized on large screens */
+  height: auto;
+  /* Alignment adjustments */
+  transform: translate(50%, 10%); /* Fine-tune position relative to vw/vh */
   z-index: 9999999;
   pointer-events: none;
-  width: 200px;
-  height: auto;
   transition: all 0.3s ease;
 }
+/*  position: fixed; 
+  top: 19%; 
+  left: 29%; 
+  width: 20vw; 
+  height: auto; 
+  z-index: 9999999;
+  pointer-events: none;
+  transform: translate(0, 0); 
+ */
+/* position: absolute;
+  top: 20rem;
+  left: 20rem;
+  z-index: 9999999;
+  pointer-events: none; */
 
 /* Dark Mode Styles */
 :root {
@@ -240,48 +259,25 @@ body:not(.dark-mode) {
 }
 
 /* Responsive Adjustments */
-
-/* Responsive Adjustments */
-@media screen and (max-width: 1200px) {
+@media (max-aspect-ratio: 16/9) {
   .tshwane-log {
-    left: 15rem;
-    top: 6rem; /* Adjusted proportionally */
-    width: 180px;
+    transform: translate(-12%, -7%);
   }
 }
 
-@media screen and (max-width: 992px) {
+/* Tablet adjustments */
+@media (max-width: 1024px) {
   .tshwane-log {
-    left: 10rem;
-    top: 5rem;
-    width: 160px;
+    width: 30vmin;
+    transform: translate(-15%, -8%);
   }
 }
 
-@media screen and (max-width: 768px) {
+/* Mobile adjustments */
+@media (max-width: 768px) {
   .tshwane-log {
-    left: 6rem;
-    top: 4rem;
-    width: 140px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .tshwane-log {
-    left: 2rem;
-    top: 3rem;
-    width: 120px;
-  }
-}
-
-/* Touch device adjustments */
-@media (hover: none) and (pointer: coarse) {
-  .peice-container img:hover {
-    transform: none !important;
-  }
-
-  .nav-item:hover {
-    transform: none !important;
-    padding: 0 30px !important;
+    width: 35vmin;
+    left: 27vw;
+    transform: translate(-18%, -10%);
   }
 }
