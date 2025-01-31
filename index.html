@@ -8,7 +8,9 @@
     <title>TshwaneHub</title>
   </head>
   <body>
+    <!-- Backroung of the home page -->
     <div class="back-styles">
+      <!-- The left side of the nav-bar, with the tshwane hub logo as its nav item -->
       <nav id="navbar">
         <div class="left-nav">
           <img
@@ -17,6 +19,7 @@
             alt="nav-pic"
           />
         </div>
+        <!-- The right side of the nav-bar where webpages are located -->
         <div class="right-nav">
           <span class="nav-item"><a href="./index.html">Home</a></span>
           <span class="nav-item">
@@ -24,7 +27,7 @@
           </span>
           <span class="nav-item display"
             ><a href="./webite-pages/aboutus.html">AboutUs</a>
-
+            <!-- A drop down-menu for the about us page -->
             <ul class="dropdown">
               <li class="list">
                 <a href="./webite-pages/aboutus.html">Mission</a>
@@ -46,11 +49,23 @@
       </nav>
 
       <main>
+        <!-- The home page's main content -->
         <div id="center-title">Tshwane Hub</div>
+        <div class="tshwane-log">
+          <img
+            src="./assets/globalShapers3d_1_-removebg-preview-removebg-preview-removebg-preview(1).png"
+            alt="tshwane-hub-shall"
+          />
+        </div>
+
         <div class="peice-container">
-          <!-- Make the pieces into a circle ?.. -->
+          <!-- Home page peices that are cut from the tshwane hub logo-->
           <div class="indi-peice">
-            <img id="piece1" src="assets/pieces/New Project.png" alt="Home" />
+            <!--This class contains piece-wise images of the home page, alt names are to be ignored
+            they are used in js as identifies for hover purposes
+            e.g "Home" corresponds to the home tag in the nav bar and so on. -->
+
+            <img id="piece1" src="assets/pieces/New Project.png" alt=" Home" />
             <img
               id="piece2"
               src="assets/pieces/New Project(1).png"
@@ -81,12 +96,16 @@
               src="assets/pieces/New Project(6).png"
               alt="ContactUS"
             />
+            <!-- The remaining pieces do not have a corresponding nav tag
+             to avoid confusion they will be empty -->
             <img id="piece8" src="assets/pieces/New Project(7).png" alt="" />
             <img id="piece9" src="assets/pieces/New Project(8).png" alt="" />
           </div>
         </div>
+        <button class="theme-toggle">💡</button>
+        <!-- dark mode button -->
       </main>
     </div>
-    <script src="./scrip.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
