@@ -154,8 +154,8 @@ a {
 
 .tshwane-log {
   position: absolute;
-  top: 12rem;
-  left: 35rem;
+  /* top: 20rem; */
+  left: 20rem;
   z-index: 9999999;
   pointer-events: none;
 }
@@ -237,166 +237,68 @@ body:not(.dark-mode) {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 1200px) {
-  For large tablets and small laptops #center-title {
-    font-size: 2.5rem;
-    padding: 15px 30px;
-    left: 50%;
-    top: 50%;
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+  #center-title {
+    font-size: 2.8rem;
+    padding: 18px 36px;
   }
 
   .nav-item {
     padding: 0 25px;
   }
-
-  .tshwane-log {
-    left: 20rem;
-    transform: scale(0.9);
-  }
 }
 
-@media (max-width: 992px) {
-  /* For tablets */
-  #navbar {
-    margin-top: 15px;
-    height: 70px;
-  }
-
-  #nav-pic {
-    transform: scale(0.6);
-  }
-
-  .nav-item {
-    padding: 0 20px;
-    font-size: 0.9rem;
-  }
-
-  .peice-container img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .tshwane-log {
-    left: 15rem;
-    transform: scale(0.8);
-  }
-}
-
-@media (max-width: 768px) {
-  /* For small tablets and large phones */
+@media screen and (max-width: 992px) {
   nav {
     flex-direction: column;
     height: auto;
-    padding: 10px 0;
-    margin-top: 15px;
-  }
-
-  .right-nav {
-    flex-direction: column;
-    margin-top: 10px;
   }
 
   .nav-item {
-    padding: 8px 15px;
-    margin: 3px 0;
-    font-size: 0.85rem;
+    padding: 10px;
+    font-size: 1rem;
   }
 
+  #center-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #center-title {
     font-size: 2rem;
-    padding: 10px 20px;
-    width: 90%;
-    left: 50%;
-    top: 40%;
+    padding: 15px 30px;
   }
 
-  .tshwane-log {
-    left: 50%;
-    transform: translateX(-50%) scale(0.7);
-    top: 55%;
-  }
-
-  .theme-toggle {
-    right: 15px;
-    top: 10px;
-    font-size: 1.4rem;
-  }
-
-  .peice-container img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .dropdown {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 5px;
+  .nav-item {
+    padding: 8px;
+    font-size: 0.95rem;
   }
 }
 
-@media (max-width: 480px) {
-  /* For mobile phones */
-  #navbar {
-    margin-top: 10px;
+@media screen and (max-width: 576px) {
+  #center-title {
+    font-size: 1.7rem;
+    padding: 12px 25px;
   }
 
-  #nav-pic {
-    transform: scale(0.5);
+  .nav-item {
+    padding: 6px;
+    font-size: 0.9rem;
   }
+}
 
+@media screen and (max-width: 400px) {
   #center-title {
     font-size: 1.5rem;
-    padding: 8px 15px;
-    top: 35%;
-  }
-
-  .tshwane-log {
-    transform: translateX(-50%) scale(0.6);
-    top: 50%;
+    padding: 10px 20px;
   }
 
   .nav-item {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
-
-  .peice-container img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .theme-toggle {
-    right: 10px;
-    top: 5px;
-    font-size: 1.2rem;
-  }
-
-  /* Adjust piece positioning for smaller screens */
-  .peice-container img {
-    transition: transform 0.3s ease;
-  }
-
-  .peice-container img:hover {
-    transform: scale(1.05) !important;
-  }
-}
-
-@media (max-width: 360px) {
-  /* For very small phones */
-  #center-title {
-    font-size: 1.3rem;
-    padding: 5px 10px;
-  }
-
-  .nav-item {
-    padding: 5px 10px;
-  }
-
-  .peice-container img {
-    width: 50px;
-    height: 50px;
+    padding: 5px;
+    font-size: 0.85rem;
   }
 }
 
