@@ -153,11 +153,9 @@ a {
 }
 
 .tshwane-log {
-  position: fixed;
-
   position: absolute;
   top: 12rem;
-  left: 35rem;
+  left: 30rem;
   z-index: 9999999;
   pointer-events: none;
 }
@@ -236,6 +234,14 @@ body:not(.dark-mode) {
   color: var(--text-light);
   transition: background-color var(--transition-time) ease-in-out,
     color var(--transition-time) ease-in-out;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .tshwane-log {
+    width: 30vmin;
+    transform: translate(-15%, -8%);
+  }
 }
 
 /* Mobile adjustments */
