@@ -154,10 +154,13 @@ a {
 
 .tshwane-log {
   position: absolute;
-  /* top: 20rem; */
+  top: 7rem;
   left: 20rem;
   z-index: 9999999;
   pointer-events: none;
+  width: 200px;
+  height: auto;
+  transition: all 0.3s ease;
 }
 
 /* Dark Mode Styles */
@@ -240,65 +243,34 @@ body:not(.dark-mode) {
 
 /* Responsive Adjustments */
 @media screen and (max-width: 1200px) {
-  #center-title {
-    font-size: 2.8rem;
-    padding: 18px 36px;
-  }
-
-  .nav-item {
-    padding: 0 25px;
+  .tshwane-log {
+    left: 15rem;
+    top: 6rem; /* Adjusted proportionally */
+    width: 180px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .nav-item {
-    padding: 10px;
-    font-size: 1rem;
-  }
-
-  #center-title {
-    font-size: 2.5rem;
+  .tshwane-log {
+    left: 10rem;
+    top: 5rem;
+    width: 160px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #center-title {
-    font-size: 2rem;
-    padding: 15px 30px;
-  }
-
-  .nav-item {
-    padding: 8px;
-    font-size: 0.95rem;
+  .tshwane-log {
+    left: 6rem;
+    top: 4rem;
+    width: 140px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #center-title {
-    font-size: 1.7rem;
-    padding: 12px 25px;
-  }
-
-  .nav-item {
-    padding: 6px;
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #center-title {
-    font-size: 1.5rem;
-    padding: 10px 20px;
-  }
-
-  .nav-item {
-    padding: 5px;
-    font-size: 0.85rem;
+  .tshwane-log {
+    left: 2rem;
+    top: 3rem;
+    width: 120px;
   }
 }
 
